@@ -1,0 +1,15 @@
+---
+- name: Example playbook using ansibleunsafetextproducer
+  hosts: localhost
+  gather_facts: false
+  vars_files:
+    - vars/main.yml
+  tasks:
+    - name: Produce unsafe text
+      siruli.ansibleunsafetext.ansibleunsafetextproducer:
+        path: "{{ some_path }}"
+      register: unsafe_text_output
+
+    - name: Debug the feedback
+      ansible.builtin.debug:
+        var: unsafe_text_output

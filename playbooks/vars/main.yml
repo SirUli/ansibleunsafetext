@@ -1,0 +1,6 @@
+---
+# Both variants have the same issue
+#some_path: "{{ lookup('env', 'SOMEPATH') | default('/some/path', True) }}"
+some_path: "{{ lookup('env', 'SOMEPATH', default ='/some/path') }}"
+# This works actually
+# some_path: "/some/path"

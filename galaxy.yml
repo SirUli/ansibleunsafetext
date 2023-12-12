@@ -1,0 +1,14 @@
+---
+namespace: siruli
+name: ansibleunsafetext
+version: 1.0.0
+readme: README.md
+authors:
+- SirUli (@SirUli)
+description: Shows the issue on ansibleunsafetext
+license:
+- GPL-2.0-or-later
+repository: https://github.com/siruli/ansibleunsafetext
+
+# The URL to any online docs
+documentation: https://github.com/siruli/ansibleunsafetext/README.md
